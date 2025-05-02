@@ -8,4 +8,15 @@
 
 ### interfaces
 
-### 
+### extends
+
+### type guard
+
+## Types
+
+### typeof
+
+### Utility types
+
+- Partial
+- Required
