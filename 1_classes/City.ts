@@ -15,3 +15,12 @@ export class City {
     return this.displayCityInfo();
   }
 }
+
+// type guard
+export function outputLocation(location: City | string) {
+  if (typeof location === "string") {
+    console.log(location);
+  } else {
+    console.log(location.getCityInfo());
+  }
+}
