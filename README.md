@@ -16,7 +16,13 @@
 
 ### typeof
 
+### Intersect type
+
 ### Utility types
 
 - Partial
 - Required
+- Readonly
+- Pick
+
+### Union types

@@ -1,32 +1,50 @@
-const city1 = {
-  name: "Insbruck",
-  country: "Austria",
-};
+import {
+  City,
+  CityName,
+  CityWithNickname,
+  CityWithoutCountry,
+  PartialCity,
+  ReadonlyCity,
+  RequiredCity,
+} from "./City";
 
-type CityWithInfo = typeof city1;
-
-const city2: CityWithInfo = {
+const city: City = {
   name: "Vienna",
   country: "Austria",
 };
+console.log(city);
 
-type CityWithNickname = typeof city2 & {
-  nickname: string;
-};
-
-const venice: CityWithNickname = {
+const nickCity: CityWithNickname = {
   name: "Venice",
   country: "Italy",
   nickname: "The Floating City",
 };
+console.log(nickCity);
 
-type PartialCity = Partial<CityWithInfo>;
-const city3: PartialCity = {
+const partialCity: PartialCity = {
   name: "Florence",
 };
+console.log(partialCity);
 
-type RequiredCity = Required<CityWithInfo>;
-const city4: RequiredCity = {
+const reqCity: RequiredCity = {
   name: "Florence",
   country: "Italy",
 };
+console.log(reqCity);
+
+const roCity: ReadonlyCity = {
+  name: "Florence",
+  country: "Italy",
+};
+// roCity.name = "Rome"; // Error: Cannot assign to 'name' because it is a read-only property
+console.log(roCity);
+
+const cityName: CityName = {
+  name: "Riva del Garda",
+};
+console.log(cityName);
+
+const cityWithoutCountry: CityWithoutCountry = {
+  name: "Riva del Garda",
+};
+console.log(cityWithoutCountry);
