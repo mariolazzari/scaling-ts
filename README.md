@@ -26,3 +26,13 @@
 - Pick
 
 ### Union types
+
+### keyof
+
+## Generics
+
+### tsconfig
+
+### Generic type
+
+### 
