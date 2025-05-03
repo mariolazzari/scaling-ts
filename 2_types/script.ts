@@ -1,6 +1,7 @@
 import {
   City,
   CityName,
+  CityProps,
   CityWithName,
   CityWithNickname,
   CityWithoutCountry,
@@ -65,3 +66,7 @@ function welcomeCity(city: CityName): string {
   return `Welcome to ${city}`;
 }
 console.log(welcomeCity("Rome"));
+
+const cityProps: CityProps[] = ["name", "country"];
+console.log(cityProps);
+// cityProps.push("nickname"); // Error: Argument of type '"nickname"' is not assignable to parameter of type 'CityProps'.
