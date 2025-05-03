@@ -1,12 +1,14 @@
 import {
   City,
   CityName,
+  CityWithName,
   CityWithNickname,
   CityWithoutCountry,
   PartialCity,
   ReadonlyCity,
   RequiredCity,
 } from "./City";
+import { Language } from "./Language";
 
 const city: City = {
   name: "Vienna",
@@ -39,7 +41,7 @@ const roCity: ReadonlyCity = {
 // roCity.name = "Rome"; // Error: Cannot assign to 'name' because it is a read-only property
 console.log(roCity);
 
-const cityName: CityName = {
+const cityName: CityWithName = {
   name: "Riva del Garda",
 };
 console.log(cityName);
@@ -48,3 +50,18 @@ const cityWithoutCountry: CityWithoutCountry = {
   name: "Riva del Garda",
 };
 console.log(cityWithoutCountry);
+
+let Langiage: Language = null;
+console.log(Langiage);
+Langiage = "English";
+console.log(Langiage);
+
+let cityName2: CityName = "Rome";
+console.log(cityName2);
+cityName2 = "Vienna";
+// cityName2 = "Madrid"; // Error: Type '"Madrid"' is not assignable to type 'CityName'.
+
+function welcomeCity(city: CityName): string {
+  return `Welcome to ${city}`;
+}
+console.log(welcomeCity("Rome"));

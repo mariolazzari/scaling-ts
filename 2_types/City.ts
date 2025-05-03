@@ -15,6 +15,8 @@ export type RequiredCity = Required<City>;
 
 export type ReadonlyCity = Readonly<City>;
 
-export type CityName = Pick<City, "name">;
+export type CityWithName = Pick<City, "name">;
 
 export type CityWithoutCountry = Omit<City, "country">;
+
+export type CityName = "Rome" | "Vienna" | "Berlin" | "Paris";
