@@ -1,6 +1,7 @@
 import { Country, printCity } from "./City";
 import { Civilization } from "./Civilization";
 import { Architect, General, Pharaoh, Philosopher, Poet } from "./Person";
+import { Tree, TreeDetails } from "./Tree";
 
 printCity<string>("New York");
 printCity<number>(123);
@@ -57,3 +58,19 @@ const romanCivilization: Civilization<General | Poet> = {
     },
   ],
 };
+
+const oakData: Tree = {
+  name: "Oak",
+  height: 20,
+  age: 100,
+};
+
+const oak: TreeDetails<Tree> = {
+  getName: () => oakData.name,
+  getHeight: () => oakData.height,
+  getAge: () => oakData.age,
+};
+
+console.log(`Name: ${oak.getName()}`);
+console.log(`Height: ${oak.getHeight()}`);
+console.log(`Age: ${oak.getAge()}`);

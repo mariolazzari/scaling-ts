@@ -39,4 +39,6 @@
 
 ### Conditional types
 
+### Type annotations
+
 ### 
