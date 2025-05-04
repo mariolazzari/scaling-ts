@@ -45,8 +45,12 @@
 
 ## Reusable TypeScript
 
-### imports
+### Imports
 
-### namespaces
+### Namespaces
+
+### Data models
+
+### Fetching types
 
 ### 
