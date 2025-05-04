@@ -1,7 +1,7 @@
 import { Country, printCity } from "./City";
 import { Civilization } from "./Civilization";
 import { Architect, General, Pharaoh, Philosopher, Poet } from "./Person";
-import { Tree, TreeDetails } from "./Tree";
+import { PartialTree, Tree, TreeDetails } from "./Tree";
 
 printCity<string>("New York");
 printCity<number>(123);
@@ -74,3 +74,8 @@ const oak: TreeDetails<Tree> = {
 console.log(`Name: ${oak.getName()}`);
 console.log(`Height: ${oak.getHeight()}`);
 console.log(`Age: ${oak.getAge()}`);
+
+const partialOak: PartialTree<Tree> = {
+  name: "Partial Oak",
+};
+console.log(partialOak);

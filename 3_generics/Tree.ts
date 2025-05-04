@@ -7,3 +7,7 @@ export type Tree = {
 export type TreeDetails<T> = {
   [K in keyof T as `get${Capitalize<string & K>}`]: () => T[K];
 };
+
+export type PartialTree<T> = {
+  [K in keyof T]?: T[K];
+};

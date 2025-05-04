@@ -41,4 +41,6 @@
 
 ### Type annotations
 
+### Mapped partial types
+
 ### 
