@@ -35,4 +35,8 @@
 
 ### Generic type
 
+### API types
+
+### Conditional types
+
 ### 
