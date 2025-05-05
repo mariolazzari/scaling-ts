@@ -1,0 +1,17 @@
+{
+  "name": "5_debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Mario Lazzari",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "vite": "^6.3.4",
+    "vitest": "^3.1.2"
+  }
+}
