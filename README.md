@@ -53,4 +53,8 @@
 
 ### Fetching types
 
-### 
+## Debugging
+
+### Challeng
+
+### Testing with Vitest
